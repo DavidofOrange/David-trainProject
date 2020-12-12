@@ -1,76 +1,85 @@
-/* This is a 'stylesheet'. It defines how the elements appear when they are rendered by the browser. */
 *{
   padding: 0;
   margin: 0;
 }
-body {
+.background {
+  position: block;
   background-color: rgb(159, 212, 247);
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 1366px;
   position: relative;
   background-image: url("station.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 #trainImg {
-  display: relative;
+  display: flex;
   width: 1600px;
   height: 200px;
   margin-top: 378px;
+  display: absolute;
+  z-index: 1;
   margin-left: -1600px;
   overflow: hidden;
 }
+.controls {
+  height: 70px;
+  width: 100%;
+  background-color: gray;
+}
+
+
+
 #pick-train {
   border-radius: 8px;
   border-color: black;
-  font-size: 20pt;
+  font-size: 15pt;
   color: white;
   background-color: rgb(115, 1, 245);
   height: 50px;
-  width: 200px;
+  width: 20%;
   float: left;
-  margin-left: 200px;
-  margin-top: 25px;
+  margin-left: 50px;
+  margin-top: 5px;
   overflow: hidden;
-}
-#pick-train:hover {
-  background-color: rgb(81, 2, 170);
 }
 #train-button {
   border-radius: 8px;
   border-color: black;
-  font-size: 20pt;
+  font-size: 15pt;
   color: white;
   background-color: rgb(1, 245, 1);
   height: 50px;
-  width: 200px;
-  margin-left: 100px;
-  margin-top: 25px;
+  width: 20%;
+  margin-left: 30px;
+  margin-top: 5px;
   float: left;
   overflow: hidden;
-}
-#train-button:hover {
-  background-color: rgb(0, 148, 0);
 }
 #color-button {
   border-radius: 8px;
   border-color: black;
-  font-size: 20pt;
+  font-size: 15pt;
   color: white;
   background-color: rgb(245, 1, 143);
   height: 50px;
-  width: 200px;
+  width: 20%;
   float: left;
-  margin-left: 100px;
-  margin-top: 25px;
+  margin-left: 30px;
+  margin-top: 5px;
   overflow: hidden;
-  text-decoration: none;
 }
 #color-button:hover {
   background-color:  rgb(156, 6, 94);
 }
 
+#train-button:hover {
+  background-color: rgb(0, 148, 0);
+}
 
-
+#pick-train:hover {
+  background-color: rgb(81, 2, 170);
+}
