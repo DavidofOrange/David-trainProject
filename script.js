@@ -56,7 +56,7 @@ function trainSound(){
 document.getElementById('color-button').addEventListener('click', skyColour);
 
 function skyColour() {
-  let skyColour = document.querySelector("body");
+  let skyColour = document.querySelector(".background");
   let colours = ["#00B0E2", "#00CCFF", "#0096C6", "#006390", "#004B76", "#00345D", "#002145", "#00042F"];
   let randomNumber = Math.floor(Math.random() * 7) + 1;
   skyColour.style.backgroundColor = colours[randomNumber];
