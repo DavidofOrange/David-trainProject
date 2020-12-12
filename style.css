@@ -10,11 +10,10 @@
   position: relative;
   background-image: url("station.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   overflow: hidden;
   margin-bottom: 0;
 }
-
 #trainImg {
   display: flex;
   width: 1600px;
@@ -26,13 +25,11 @@
   overflow: hidden;
 }
 .controls {
-  height: 70px;
-  width: 1366px;
+  height: 100px;
+  width: 100%;
   background-color: gray;
+  margin-bottom: 0;
 }
-
-
-
 #pick-train {
   border-radius: 8px;
   border-color: black;
@@ -75,12 +72,9 @@
 #color-button:hover {
   background-color:  rgb(156, 6, 94);
 }
-
 #train-button:hover {
   background-color: rgb(0, 148, 0);
 }
-
 #pick-train:hover {
   background-color: rgb(81, 2, 170);
 }
-
