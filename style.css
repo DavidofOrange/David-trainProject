@@ -10,7 +10,7 @@
   position: relative;
   background-image: url("station.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
   overflow: hidden;
   margin-bottom: 0;
 }
@@ -25,10 +25,9 @@
   overflow: hidden;
 }
 .controls {
-  height: 100px;
-  width: 100%;
+  height: 70px;
+  width: 1366px;
   background-color: gray;
-  margin-bottom: 0;
 }
 #pick-train {
   border-radius: 8px;
@@ -78,3 +77,4 @@
 #pick-train:hover {
   background-color: rgb(81, 2, 170);
 }
+
