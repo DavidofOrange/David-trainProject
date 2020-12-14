@@ -1,13 +1,15 @@
 'use strict';
 
-// This sets a random train.
+// This sets the train.
 document.getElementById('pick-train').addEventListener('click', randomTrainSelection);
-
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 function randomTrainSelection() {
   let changeTrain = document.querySelector("img");
-  let randomNumber = Math.floor(Math.random() * 9) + 1;
-  changeTrain.setAttribute("src", `train${randomNumber}.svg`);
+  let nextrain = num.shift();
+  num.push(nextrain);
+  changeTrain.setAttribute("src", `train${nextrain}.svg`);
 }
+
 
 //This controls the train movement and train horn sound.
 document.getElementById('train-button').addEventListener('click', moveTrain);
