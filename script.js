@@ -51,13 +51,25 @@ function trainSound(){
   let trainSound = new Audio("https://www.soundjay.com/transportation/sounds/metro-pass-by-01.mp3");
   trainSound.play();
 }
-
 //This controls the sky colour setting.
 document.getElementById('color-button').addEventListener('click', skyColour);
 
-function skyColour() {
-  let skyColour = document.querySelector(".background");
-  let colours = ["#00B0E2", "#00CCFF", "#0096C6", "#006390", "#004B76", "#00345D", "#002145", "#00042F"];
-  let randomNumber = Math.floor(Math.random() * 7) + 1;
-  skyColour.style.backgroundColor = colours[randomNumber];
-  }
+let colours = ["#00B0E2", "#00CCFF", "#0096C6", "#006390", "#004B76", "#00345D", "#002145", "#00042F"];
+
+
+function skyColour(){
+  let skyColours = document.querySelector(".background");
+    let color = colours.shift();
+    colours.push(color);
+
+    skyColours.style.backgroundColor = color;
+};
+
+
+  //mobile device
+  let nua = navigator.userAgent;
+  let is_android = ((nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1) && !(nua.indexOf('Chrome') > -1));
+  if(is_android) {
+		$('select.form-control').removeClass('form-control').css('width', '100%');
+
+}
